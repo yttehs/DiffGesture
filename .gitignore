@@ -9,3 +9,5 @@ events*
 *.wav
 *.pkl
 *.jpg
+*venv
+*fastText

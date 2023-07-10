@@ -15,6 +15,15 @@ Animating virtual avatars to make co-speech gestures facilitates various applica
     git clone https://github.com/Advocate99/DiffGesture.git
     pip install -r requirements.txt
     ```
+    
+    ```
+    If an error crops up while installing 'fasttext' using pip, then you can install it separately from the official 'fasttext' githubrepo as follows:
+    git clone https://github.com/facebookresearch/fastText.git
+    cd fastText
+    python setup.py install
+
+    However, make sure that you use the same python vitual environment for both 'DiffGesture' and 'fasttext'.
+    ```
 
 2. Download pretrained fasttext model from [here](https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M-subword.zip) and put `crawl-300d-2M-subword.bin` and `crawl-300d-2M-subword.vec` at `data/fasttext/`.
 
