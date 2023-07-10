@@ -17,7 +17,7 @@ Animating virtual avatars to make co-speech gestures facilitates various applica
     ```
     
     ```
-    If an error crops up while installing 'fasttext' using pip, then you can install it separately from the official 'fasttext' githubrepo as follows:
+    If an error crops up while installing 'fasttext' using pip, then you can install it separately from the official 'fasttext' github repo as follows:
     git clone https://github.com/facebookresearch/fastText.git
     cd fastText
     python setup.py install
