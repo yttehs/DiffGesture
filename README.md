@@ -10,24 +10,21 @@ Animating virtual avatars to make co-speech gestures facilitates various applica
 
 ## Installation & Preparation
 
-1. Clone this repository and install packages:
+1. Create conda virtual environment
+    ```
+    conda create --name diffgest python=3.6
+    conda activate diffgest
+    ```
+
+2. Clone this repository and install packages:
     ```
     git clone https://github.com/Advocate99/DiffGesture.git
     pip install -r requirements.txt
     ```
-    
-    ```
-    If an error crops up while installing 'fasttext' using pip, then you can install it separately from the official 'fasttext' githubrepo as follows:
-    git clone https://github.com/facebookresearch/fastText.git
-    cd fastText
-    python setup.py install
 
-    However, make sure that you use the same python vitual environment for both 'DiffGesture' and 'fasttext'.
-    ```
+3. Download pretrained fasttext model from [here](https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M-subword.zip) and put `crawl-300d-2M-subword.bin` and `crawl-300d-2M-subword.vec` at `data/fasttext/`.
 
-2. Download pretrained fasttext model from [here](https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M-subword.zip) and put `crawl-300d-2M-subword.bin` and `crawl-300d-2M-subword.vec` at `data/fasttext/`.
-
-3. Download the autoencoder used for FGD which include the following:
+4. Download the autoencoder used for FGD which include the following:
 
     For the TED Gesture Dataset, we use the pretrained Auto-Encoder model provided by Yoon et al. for better reproducibility [the ckpt in the train_h36m_gesture_autoencoder folder](https://kaistackr-my.sharepoint.com/:u:/g/personal/zeroyy_kaist_ac_kr/Ec1UIsDDLHtKia04_TTRbygBepXORv__kkq-C9IqZs32aA?e=bJGXQr).
 
@@ -35,9 +32,9 @@ Animating virtual avatars to make co-speech gestures facilitates various applica
 
     Save the models in `output/train_h36m_gesture_autoencoder/gesture_autoencoder_checkpoint_best.bin` for TED Gesture, and `output/TED_Expressive_output/AE-cos1e-3/checkpoint_best.bin` for TED Expressive.
 
-4. Refer to [HA2G](https://github.com/alvinliu0/HA2G) to download the two datasets.
+5. Refer to [HA2G](https://github.com/alvinliu0/HA2G) to download the two datasets.
 
-5. The pretrained models can be found [here](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/ltzhu99_connect_hku_hk/EVE9MqI18k5FmsavVFESaVAB2lrv5e1CiHhr20xW2Vd5cA?e=eU6e4t).
+6. The pretrained models can be found [here](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/ltzhu99_connect_hku_hk/EVE9MqI18k5FmsavVFESaVAB2lrv5e1CiHhr20xW2Vd5cA?e=eU6e4t).
 
 ## Training
 

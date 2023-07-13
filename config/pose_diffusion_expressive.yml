@@ -27,7 +27,7 @@ null_cond_prob: 0.1
 
 # train params
 epochs: 500
-batch_size: 128
+batch_size: 512 #128
 learning_rate: 0.0005
 
 # eval params

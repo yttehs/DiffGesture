@@ -6,11 +6,13 @@ matplotlib
 librosa
 tensorboard>=1.14
 future
-pyarrow #pyarrow==0.14.0
+pyarrow==0.14.1
 lmdb==0.96
 tqdm
+fasttext
 configargparse
 soundfile
 pygame
 google-cloud-texttospeech==1.0.1
-fasttext
+timm
+umap
